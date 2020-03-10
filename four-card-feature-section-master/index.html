@@ -3,15 +3,174 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="https://raw.githubusercontent.com/rmaziano/Four_cards/master/four-card-feature-section-master/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Four card feature section</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    @import url('https://fonts.googleapis.com/css?family=Poppins:200,400,500&display=swap');
+    
+header{
+    margin-bottom:40px;
+}
+body{
+    background-color:#F5F5F5;
+    position: relative;
+    font-family: 'Poppins','sans serif';
+    margin:0;
+}
+p{
+        font-size: 14px;
+        text-align: left;
+        font-weight: 200;
+}
+h1{
+    font-size: 25px;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 60px;
+    color: grey;
+}
+h2{
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    font-weight: bold;
+}
+
+#header {
+    font-size: 15px;
+    text-align: center;
+    margin: 0 auto;
+    color: grey;
+    width: auto;
+}
+h3 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+.card-container-left{
+    display: flex;
+    align-self: center;
+    padding-right: 30px;
+    width: auto;
+}
+.card-container-center{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: auto;
+}
+.card-container-right{
+    display: flex;
+    align-self: center;
+    padding-left: 30px;
+    width: auto;
+}
+.card-green{
+    border-top: 4px solid hsl(180, 62%, 55%);
+    width: 310px;
+    height: 220px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.5s;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+.card-red{
+    border-top: 4px solid hsl(0, 78%, 62%);
+    width: 310px;
+    height: 220px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.5s;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-bottom: 15px;      
+}
+.card-yellow{
+    border-top: 4px solid hsl(34, 97%, 64%);
+    width: 310px;
+    height: 220px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.5s;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 30px; 
+}
+.card-blue{
+    border-top: 4px solid hsl(212, 86%, 64%);
+    width: 310px;
+    height: 220px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.5s;
+    border-radius: 5px;
+    padding: 10px 20px;
+
+
+}
+svg{
+    float: right;
+    padding-top: 40px;
+    padding-right: 20px;
+}
+footer {
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+    }
+    body{
+        padding: 10px;
+    }
+    #header {
+        margin: 10px;
+    }
+    .card-container-left{
+        padding-right: 0px;
+    }
+    .card-container-right{
+        padding-left: 0px;
+    }
+    .card-yellow{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .card-red{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .card-green{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .card-blue{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    footer {
+        position: relative;;
+         bottom: 0;
+         left: 0;
+        right: 0;
+    }
+  }
   </style>
 </head>
 
